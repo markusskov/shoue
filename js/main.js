@@ -6,7 +6,7 @@ fetchData(`${BASE_URL}/hero-image`);
 const heroImg = document.querySelector('.hero__image');
 
 export function setHeroImage(image) {
-  let hero = image.shoes.url;
+  let hero = image.shoes.formats.medium.url;
   console.log(hero);
-  heroImg.innerHTML = `<img class="img-fluid" src="${BASE_URL + hero}">`;
+  heroImg.innerHTML = `<img class="img-fluid" src="${hero}">`;
 }

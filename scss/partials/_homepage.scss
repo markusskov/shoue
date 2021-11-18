@@ -1,12 +1,14 @@
 .hero {
   width: 100%;
-  height: 70vh;
+  height: 100%;
   background: $hero-banner;
 
   &__section {
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    padding: 3rem 0;
   }
 
   &__title {
@@ -20,10 +22,28 @@
     padding: 10px 45px;
     margin-top: 40px;
     border-radius: 5px;
+    color: $white;
+    text-decoration: none;
+  }
 
-    &__cta {
-      color: white;
-      text-decoration: none;
-    }
+  &__button:hover {
+    background-color: $secondary-color;
+    cursor: pointer;
+    color: $white;
+  }
+}
+
+.brands {
+  margin-top: 2rem;
+
+  &__title {
+    padding: 10px 0;
+  }
+
+  &__rectangle {
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 }
