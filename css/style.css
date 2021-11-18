@@ -1,1 +1,5 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins&display=swap");
+html {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

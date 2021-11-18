@@ -1,9 +1,10 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,OAAO,CAAC,mHAAI;AAEZ,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,0CAA0C;CACxD",
     "sources": [
         "../scss/style.scss",
-        "../scss/partials/_variables.scss"
+        "../scss/partials/_variables.scss",
+        "../scss/partials/_fonts.scss"
     ],
     "names": [],
     "file": "style.css"
