@@ -17,6 +17,11 @@ h4 {
   font-size: 30px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .navbar {
   background-color: #2a3340 !important;
   -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.1);
@@ -75,15 +80,18 @@ h4 {
   color: #fff;
 }
 
-.brands {
+.brands,
+.products {
   margin-top: 2rem;
 }
 
-.brands__title {
+.brands__title,
+.products__title {
   padding: 10px 0;
 }
 
-.brands__rectangle {
+.brands__rectangle,
+.products__rectangle {
   border: 1px solid rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,5 +108,25 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  border: none;
+  padding: 1rem;
+}
+
+.card-text {
+  text-decoration: none !important;
+  color: black;
+}
+
+.card-img-top {
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 /*# sourceMappingURL=style.css.map */

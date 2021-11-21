@@ -8,7 +8,6 @@ export async function displayFeaturedProducts() {
     const productDOM = document.querySelector('.cards');
     products.forEach((product) => {
       let isProductInStock = '';
-
       if (product.inStock) {
         isProductInStock = 'In Stock';
       } else {
@@ -17,13 +16,15 @@ export async function displayFeaturedProducts() {
 
       if (product.featured) {
         productDOM.innerHTML += `
-        <div class="card" style="width: 18rem;">
+        <a href="/singleProduct.html?id=${product.id}">
+        <div class="card">
           <img class="card-img-top" src="${product.img.url}" alt="${product.title}">
           <div class="card-body">
             <p class="card-text">${product.title}</p>
-            <p class="card-text">${product.price} $ | ${isProductInStock}</p>
+            <p class="card-text">${product.price}$ | ${isProductInStock}</p>
           </div>
-        </div>`;
+        </div>
+        </a>`;
       }
     });
   } catch (err) {
