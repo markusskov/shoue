@@ -95,4 +95,10 @@ h4 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */

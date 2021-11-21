@@ -1,12 +1,5 @@
-import { BASE_URL } from './configs/configs.js';
-import { fetchData } from './libs/fetchData.js';
+import { displayFeaturedProducts } from './displayFeaturedProducts.js';
+import { getHeroImage } from './displayHeroImg.js';
 
-fetchData(`${BASE_URL}/hero-image`);
-
-const heroImg = document.querySelector('.hero__image');
-
-export function setHeroImage(image) {
-  let hero = image.shoes.formats.medium.url;
-  console.log(hero);
-  heroImg.innerHTML = `<img class="img-fluid" src="${hero}">`;
-}
+displayFeaturedProducts();
+getHeroImage();
