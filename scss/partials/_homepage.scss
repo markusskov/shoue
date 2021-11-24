@@ -69,3 +69,87 @@
     border-radius: 15px;
   }
 }
+
+.support {
+  width: 100%;
+  height: auto;
+  background-color: $primary-color;
+  margin: 2rem 0;
+  display: flex;
+  padding: 5rem 0;
+
+  &__flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__shipping,
+  &__visa,
+  &__phone {
+    text-align: center;
+    color: $white;
+    max-width: 145px;
+  }
+}
+
+.edition {
+  display: flex;
+  margin: 2rem 0;
+
+  &__images {
+    display: flex;
+  }
+  &__relative {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  &__winter,
+  &__summer {
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+  }
+}
+
+.fa-truck,
+.fa-cc-visa,
+.fa-phone {
+  font-size: 25px;
+  margin: 1rem 0;
+}
+
+// QUERIES
+@media (max-width: 767px) {
+  .hero__section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 3rem;
+  }
+
+  .brands__rectangle img {
+    width: 15%;
+  }
+
+  .support__flex {
+    flex-direction: column;
+  }
+  .cards {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .products__title {
+    text-align: center;
+  }
+}
