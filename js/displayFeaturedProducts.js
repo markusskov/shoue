@@ -1,6 +1,6 @@
 import { BASE_URL } from './configs/configs.js';
 
-export async function displayFeaturedProducts() {
+async function displayFeaturedProducts() {
   try {
     const res = await axios.get(`${BASE_URL}/products`);
     const products = res.data;
@@ -31,3 +31,4 @@ export async function displayFeaturedProducts() {
     console.log(err);
   }
 }
+displayFeaturedProducts();

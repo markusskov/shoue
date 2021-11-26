@@ -11,3 +11,4 @@ export async function getHeroImage() {
     console.log(err);
   }
 }
+getHeroImage();

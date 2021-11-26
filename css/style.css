@@ -356,4 +356,34 @@ a {
     font-size: 16px;
   }
 }
+
+.displayProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.products {
+  margin: 2rem 0;
+}
+
+.products__wrapper {
+  position: relative;
+}
+
+.products__wrapper i {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  color: black;
+}
+
+.products__search {
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  border: 1px solid #f7f7f7;
+  background-color: #f7f7f7;
+}
 /*# sourceMappingURL=style.css.map */

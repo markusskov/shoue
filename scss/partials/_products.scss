@@ -1,0 +1,25 @@
+.displayProducts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products {
+  margin: 2rem 0;
+
+  &__wrapper {
+    position: relative;
+  }
+  &__wrapper i {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    color: black;
+  }
+
+  &__search {
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+    border: 1px solid $grey;
+    background-color: $grey;
+  }
+}

@@ -1,5 +1,4 @@
-import { displayFeaturedProducts } from './displayFeaturedProducts.js';
-import { getHeroImage } from './displayHeroImg.js';
+import { fetchProducts } from './libs/fetchProducts.js';
+import { BASE_URL } from './configs/configs.js';
 
-displayFeaturedProducts();
-getHeroImage();
+fetchProducts(`${BASE_URL}/products`);
