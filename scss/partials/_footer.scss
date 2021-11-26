@@ -1,0 +1,78 @@
+.footer {
+  display: flex;
+  margin-top: 2rem;
+  background-color: $primary-color;
+  height: auto;
+  padding: 2rem;
+
+  &__subscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      color: $white;
+    }
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &__wrapper i {
+      position: absolute;
+      left: 15px;
+      top: 12px;
+      color: $white;
+    }
+
+    &__input {
+      border: none;
+      background-color: rgba($color: #000000, $alpha: 0.33);
+      padding: 0.5rem 2.5rem;
+      color: $white;
+    }
+
+    &__input::placeholder,
+    &__input:focus {
+      color: $white;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    color: $white;
+    margin-top: 3rem;
+
+    &__section ul {
+      list-style: none;
+      padding: 0;
+    }
+    &__section ul li {
+      padding: 0.2rem 0;
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+
+  & p {
+    margin: 0;
+    padding: 1rem 0;
+  }
+}
+
+// QUERIES
+@media (max-width: 767px) {
+  .footer__links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__section ul {
+    margin: 2rem 0;
+  }
+}
