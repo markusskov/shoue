@@ -1,6 +1,8 @@
 .displayProducts {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  min-height: 20vh;
 }
 
 .products {

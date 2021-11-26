@@ -1,3 +1,4 @@
+import alert from './components/alert.js';
 import { BASE_URL } from './configs/configs.js';
 
 async function displayFeaturedProducts() {
@@ -28,6 +29,7 @@ async function displayFeaturedProducts() {
       }
     });
   } catch (err) {
+    alert('alert-danger', 'Error requesting products.');
     console.log(err);
   }
 }

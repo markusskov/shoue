@@ -1,6 +1,10 @@
+.footers {
+  position: absolute;
+  width: 100%;
+}
+
 .footer {
   display: flex;
-  margin-top: 2rem;
   background-color: $primary-color;
   height: auto;
   padding: 2rem;

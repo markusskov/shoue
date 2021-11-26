@@ -38,11 +38,15 @@ a {
   text-decoration: underline;
 }
 
+.footers {
+  position: absolute;
+  width: 100%;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2rem;
   background-color: #2a3340;
   height: auto;
   padding: 2rem;
@@ -308,6 +312,8 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: #fff;
+  text-align: center;
+  cursor: pointer;
 }
 
 .fa-truck,
@@ -363,6 +369,8 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+  min-height: 20vh;
 }
 
 .products {
