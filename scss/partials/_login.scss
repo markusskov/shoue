@@ -1,0 +1,38 @@
+.login {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__header,
+  &__subtitle {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    margin-bottom: 1rem;
+
+    &__username,
+    &__password {
+      padding: 0.5rem 3rem;
+      border-radius: 5px;
+      border: 1px solid $grey;
+      background-color: $grey;
+    }
+
+    & i {
+      position: absolute;
+      left: 15px;
+      top: 12px;
+      color: black;
+    }
+  }
+}

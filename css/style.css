@@ -409,4 +409,67 @@ a {
             align-items: center;
   }
 }
+
+.login {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login__header, .login__subtitle {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.login__wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.login__wrapper__username, .login__wrapper__password {
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  border: 1px solid #f7f7f7;
+  background-color: #f7f7f7;
+}
+
+.login__wrapper i {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  color: black;
+}
+
+.dashboard {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */

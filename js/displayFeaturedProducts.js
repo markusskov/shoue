@@ -8,11 +8,9 @@ async function displayFeaturedProducts() {
     console.log(products);
     const productDOM = document.querySelector('.cards');
     products.forEach((product) => {
-      let isProductInStock = '';
-      if (product.inStock) {
-        isProductInStock = 'In Stock';
-      } else {
-        isProductInStock = 'Sold out';
+      let isProductInStock = 'In Stock';
+      if (!product.inStock) {
+        isProductInStock = 'Not In Stock';
       }
 
       if (product.featured) {
