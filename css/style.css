@@ -472,4 +472,16 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.fa-edit {
+  color: white;
+}
+
+.editProducts {
+  min-height: 70vh;
+}
+
+.singleProduct {
+  min-height: 70vh;
+}
 /*# sourceMappingURL=style.css.map */

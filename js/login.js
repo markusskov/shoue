@@ -1,9 +1,9 @@
-import alert from './components/alert.js';
 import { saveToLocalStorage } from './libs/localStorage.js';
 import {
   testLengthofTextBoxValue,
   testEmailAddress,
 } from './libs/validation.js';
+import alert from './components/alert.js';
 import { BASE_URL } from './configs/configs.js';
 
 let form = document.querySelector('.form');
@@ -22,13 +22,9 @@ form.onsubmit = async function (event) {
         identifier: email.value,
         password: password.value,
       });
-
       console.log(data);
-
       saveToLocalStorage('jwt', data.jwt);
-
       saveToLocalStorage('user', data.user);
-
       window.location.href = './dashboard.html';
     } catch (error) {
       alert('alert-danger', 'Your email or password is incorrect');

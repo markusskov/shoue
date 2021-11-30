@@ -28,11 +28,11 @@ function changeMenuIfLoggedIn() {
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/dashboard.html">Dashboard</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="/products.html">Products</a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/dashboard.html">Dashboard</a>
+                </li> 
                 <li class="nav-item">
                   <a class="logOut nav-link" href="#">Log Out</a>
                 </li>

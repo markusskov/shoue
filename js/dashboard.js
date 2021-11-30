@@ -7,12 +7,18 @@ async function overviewOverProducts() {
   productList.innerHTML = '';
 
   data.forEach((product, iteration) => {
+    let isItFeatured = 'YES';
+    if (!product.featured) {
+      isItFeatured = 'NO';
+    }
+
     productList.innerHTML += `
-<tr>
-  <th scope="row">${iteration + 1}</th>
-  <td>${product.title}</td>
-  <td>
-      <a href="editArticle.html?id=${
+    <tr>
+      <th scope="row">${iteration + 1}</th>
+      <td>${product.title}</td>
+      <td>${isItFeatured}</td>
+    <td>
+      <a href="editProduct.html?id=${
         product.id
       }"><i class="fas fa-edit"></i></a>
   </td>
