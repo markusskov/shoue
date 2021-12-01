@@ -1,4 +1,4 @@
-import { BASE_URL } from './configs/configs.js';
+import { BASE_URL, header } from './configs/configs.js';
 
 async function overviewOverProducts() {
   const { data } = await axios.get(`${BASE_URL}/products`);
@@ -26,6 +26,18 @@ async function overviewOverProducts() {
       <i class="fas fa-trash-alt" data-id=${product.id}></i>
   </td>
 </tr>`;
+  });
+
+  let deleteProducts = document.querySelectorAll('.fa-trash-alt');
+  deleteProducts.forEach(function (deleted) {
+    deleted.onclick = async function () {
+      let response = await axios.delete(
+        `${BASE_URL}/products/${deleted.dataset.id}`,
+        header
+      );
+      console.log(response);
+      overviewOverProducts();
+    };
   });
 }
 overviewOverProducts();
