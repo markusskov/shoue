@@ -23,7 +23,9 @@ form.onsubmit = async function (event) {
         password: password.value,
       });
       console.log(data);
-      saveToLocalStorage('jwt', data.jwt);
+      // Have to save manually to localstorage to not get quotes around token key
+      localStorage.setItem('jwt', data.jwt);
+
       saveToLocalStorage('user', data.user);
       window.location.href = './dashboard.html';
     } catch (error) {

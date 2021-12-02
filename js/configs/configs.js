@@ -6,3 +6,4 @@ export const header = {
     Authorization: `Bearer ${localStorage.getItem('jwt')}`,
   },
 };
+console.log(header);

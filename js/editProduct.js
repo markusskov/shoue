@@ -28,6 +28,22 @@ async function getFormInfo() {
   if (data.featured) {
     featuredRadio.checked = true;
   }
-  // featured
 }
 getFormInfo();
+
+form.onsubmit = async function (event) {
+  event.preventDefault();
+  let updatedProduct = {
+    title: name.value,
+    price: price.value,
+    subtext: subtext.value,
+    description: description.value,
+  };
+  const response = await axios.put(
+    `${BASE_URL}/products/${id}`,
+    updatedProduct,
+    header
+  );
+  alert('alert-success', 'Product updated.');
+  console.log(response);
+};

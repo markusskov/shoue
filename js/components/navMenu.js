@@ -91,7 +91,7 @@ function changeMenuIfLoggedIn() {
   if (logOut !== null) {
     logOut.onclick = () => {
       //  Dont want to clear all, still saving the favourited articles.
-      localStorage.removeItem('token');
+      localStorage.removeItem('jwt');
       localStorage.removeItem('user');
       window.location.href = './index.html';
     };
