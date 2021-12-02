@@ -496,5 +496,27 @@ a {
 
 .singleProduct {
   min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+.singleProduct__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.singleProduct__subtitle {
+  max-width: 400px;
+}
+
+.img__background {
+  background-color: #f7f7f7;
+  border-radius: 5pc;
 }
 /*# sourceMappingURL=style.css.map */
