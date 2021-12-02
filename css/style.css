@@ -499,6 +499,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 2rem;
 }
 
@@ -506,17 +510,105 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.singleProduct__title {
+  font-size: 28px;
 }
 
 .singleProduct__subtitle {
   max-width: 400px;
 }
 
+.singleProduct__image {
+  height: 500px;
+  width: 500px;
+}
+
 .img__background {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-color: #f7f7f7;
-  border-radius: 5pc;
+  border-radius: 15px;
+}
+
+.description {
+  margin-top: 4rem;
+}
+
+.description__title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.features {
+  margin-top: 2rem;
+  background-color: #f4f8ff;
+  padding: 5rem 0;
+  width: 100%;
+}
+
+.features__title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .singleProduct {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .singleProduct__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .singleProduct__title {
+    margin-top: 3rem;
+  }
+  .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .description__info {
+    max-width: 400px;
+    text-align: center;
+  }
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features__title, .features__info {
+    width: 400px;
+    margin: auto;
+  }
+  .features__title {
+    padding: 1rem 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
