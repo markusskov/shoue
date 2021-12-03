@@ -611,4 +611,9 @@ a {
     padding: 1rem 0;
   }
 }
+
+.cart {
+  min-height: 70vh;
+  margin-top: 2rem;
+}
 /*# sourceMappingURL=style.css.map */

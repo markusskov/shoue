@@ -37,7 +37,7 @@ function changeMenuIfLoggedIn() {
                   <a class="logOut nav-link" href="#">Log Out</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
+                  <a class="nav-link" href="/cart.html"
                     ><i class="fas fa-shopping-cart"></i
                   ></a>
                 </li></ul
@@ -78,7 +78,7 @@ function changeMenuIfLoggedIn() {
                   <a class="nav-link" href="/login.html">Log In</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"
+                  <a class="nav-link" href="/cart.html"
                     ><i class="fas fa-shopping-cart"></i
                   ></a>
                 </li></ul
