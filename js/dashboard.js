@@ -31,6 +31,7 @@ async function overviewOverProducts() {
   let deleteProducts = document.querySelectorAll('.fa-trash-alt');
   deleteProducts.forEach(function (deleted) {
     deleted.onclick = async function () {
+      alert('Are you sure you want to delete this product?');
       let response = await axios.delete(
         `${BASE_URL}/products/${deleted.dataset.id}`,
         header

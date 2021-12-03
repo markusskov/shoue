@@ -3,6 +3,7 @@ import {
   getFromLocalStorage,
   saveToLocalStorage,
 } from './libs/localStorage.js';
+import alert from './components/alert.js';
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -36,6 +37,7 @@ async function displaySingleProduct() {
 }
 function addToCart() {
   addToCartBtn.onclick = () => {
+    addToCartBtn.innerText = 'Added to Cart';
     let product = {
       id: addToCartBtn.dataset.id,
       title: addToCartBtn.dataset.title,
