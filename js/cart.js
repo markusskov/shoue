@@ -1,8 +1,14 @@
 import { getFromLocalStorage } from './libs/localStorage.js';
 
 const shoppingCart = getFromLocalStorage('savedProducts');
-console.log(shoppingCart);
 const listOfProducts = document.querySelector('.list-group');
+const total = document.querySelector('.total');
+
+const sumall = shoppingCart
+  .map((item) => parseFloat(item.price))
+  .reduce((prev, curr) => prev + curr, 0);
+
+total.innerHTML = `Total price: <b>$${sumall}</b>`;
 
 function displayProductsInShoppingCart() {
   shoppingCart.forEach((product) => {
@@ -23,6 +29,7 @@ function displayProductsInShoppingCart() {
         </p>
         <small>Return to product.</small>
       </a>
+    
       `;
   });
 }
