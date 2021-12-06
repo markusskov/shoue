@@ -11,6 +11,8 @@ let name = document.querySelector('#name');
 let price = document.querySelector('#price');
 let subtext = document.querySelector('#subtext');
 let description = document.querySelector('#description');
+let about = document.querySelector('#about');
+let url = document.querySelector('#url');
 let featuredRadio = document.querySelector('#featured');
 let inStockRadio = document.querySelector('#inStock');
 
@@ -21,6 +23,8 @@ async function getFormInfo() {
   price.value = data.price;
   subtext.value = data.subtitle;
   description.value = data.product_features;
+  about.value = data.about;
+  url.value = data.img.url;
 
   if (data.inStock) {
     inStockRadio.checked = true;
@@ -36,9 +40,15 @@ form.onsubmit = async function (event) {
   let updatedProduct = {
     title: name.value,
     price: price.value,
-    subtext: subtext.value,
-    description: description.value,
+    subtitle: subtext.value,
+    product_features: description.value,
+    about: about.value,
+    img: { url: url.value },
+
+    inStock: inStockRadio.checked,
+    featured: featuredRadio.checked,
   };
+
   const response = await axios.put(
     `${BASE_URL}/products/${id}`,
     updatedProduct,
