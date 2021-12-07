@@ -56,6 +56,7 @@
 @media (max-width: 767px) {
   .singleProduct {
     align-items: center;
+    padding: 0 1rem;
 
     &__flex {
       flex-direction: column;
@@ -63,16 +64,14 @@
     &__title {
       margin-top: 3rem;
     }
+    &__image {
+      width: 300px;
+      height: 300px;
+    }
   }
   .description {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-    &__info {
-      max-width: 400px;
-      text-align: center;
-    }
   }
 
   .features {
@@ -82,11 +81,10 @@
 
     &__title,
     &__info {
-      width: 400px;
       margin: auto;
     }
     &__title {
-      padding: 1rem 0;
+      padding: 0.5rem 0;
     }
   }
 }
