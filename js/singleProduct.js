@@ -3,7 +3,6 @@ import {
   getFromLocalStorage,
   saveToLocalStorage,
 } from './libs/localStorage.js';
-import alert from './components/alert.js';
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -22,7 +21,7 @@ const addToCartBtn = document.querySelector('.addToCartBtn');
 async function displaySingleProduct() {
   const { data } = await axios.get(`${BASE_URL}/products/${id}`);
   console.log(data);
-  productImage.innerHTML = `<img class="img-fluid img__background" src="${data.img.url}">`;
+  productImage.innerHTML = `<img class="img-fluid img__background" src="${data.url}">`;
   title.innerHTML = `${data.title}`;
   subtitle.innerHTML = `${data.subtitle}`;
   price.innerHTML = `Price: <b>$${data.price}</b>`;
@@ -32,7 +31,7 @@ async function displaySingleProduct() {
   // Add data attributes to button for saving to local storage
   addToCartBtn.dataset.id = `${data.id}`;
   addToCartBtn.dataset.title = `${data.title}`;
-  addToCartBtn.dataset.url = `${data.img.url}`;
+  addToCartBtn.dataset.url = `${data.url}`;
   addToCartBtn.dataset.price = `${data.price}`;
 }
 function addToCart() {

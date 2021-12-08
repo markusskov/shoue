@@ -24,7 +24,7 @@ async function getFormInfo() {
   subtext.value = data.subtitle;
   description.value = data.product_features;
   about.value = data.about;
-  url.value = data.img.url;
+  url.value = data.url;
 
   if (data.inStock) {
     inStockRadio.checked = true;

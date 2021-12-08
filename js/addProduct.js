@@ -21,7 +21,6 @@ form.onsubmit = async function (event) {
       subtitle: subtext.value,
       product_features: description.value,
       about: about.value,
-      // Need to find a way to update image url, since it is nested.
       url: url.value,
       inStock: inStockRadio.checked,
       featured: featuredRadio.checked,
