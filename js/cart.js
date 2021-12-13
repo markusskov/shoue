@@ -29,7 +29,6 @@ function displayProductsInShoppingCart() {
         </p>
         <small>Return to product.</small>
       </a>
-    
       `;
   });
 }
