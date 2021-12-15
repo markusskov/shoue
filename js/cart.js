@@ -2,6 +2,7 @@ import { getFromLocalStorage } from './libs/localStorage.js';
 
 const shoppingCart = getFromLocalStorage('savedProducts');
 const listOfProducts = document.querySelector('.list-group');
+const emptyCart = document.querySelector('.empty');
 const total = document.querySelector('.total');
 
 const sumall = shoppingCart
@@ -9,6 +10,10 @@ const sumall = shoppingCart
   .reduce((prev, curr) => prev + curr, 0);
 
 total.innerHTML = `Total price: <b>$${sumall}</b>`;
+
+if (localStorage.getItem('savedProducts') === null) {
+  emptyCart.innerHTML = '<b>Your cart is empty</b>';
+}
 
 function displayProductsInShoppingCart() {
   shoppingCart.forEach((product) => {
