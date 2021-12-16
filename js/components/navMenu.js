@@ -6,7 +6,7 @@ function changeMenuIfLoggedIn() {
       '.navigation'
     ).innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="/index.html">SHOUE</a>
+          <a class="navbar-brand" href="/index.html"><img class="logo" src="/img/logo_transparent.png"></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -50,7 +50,7 @@ function changeMenuIfLoggedIn() {
       '.navigation'
     ).innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="/index.html">SHOUE</a>
+          <a class="navbar-brand" href="/index.html"><img class="logo" src="/img/logo_transparent.png"></a>
           <button
             class="navbar-toggler"
             type="button"
