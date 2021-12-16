@@ -4,9 +4,12 @@
 }
 
 .nav-link,
-.nav-link.active,
-.navbar-brand {
+.nav-link.active {
   color: $white !important;
+}
+
+.nav-link:hover {
+  color: rgba($color: #fff, $alpha: 0.7) !important;
 }
 
 .nav-link.active {
