@@ -52,7 +52,8 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .card {
@@ -134,6 +135,13 @@
 }
 
 // QUERIES
+
+@media (max-width: 1200px) {
+  .cards {
+    align-items: center;
+  }
+}
+
 @media (max-width: 767px) {
   .hero__section {
     flex-direction: column-reverse;
