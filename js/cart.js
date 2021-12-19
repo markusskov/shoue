@@ -1,19 +1,15 @@
 import { getFromLocalStorage } from './libs/localStorage.js';
 
-const shoppingCart = getFromLocalStorage('savedProducts');
+let shoppingCart = getFromLocalStorage('savedProducts');
 const listOfProducts = document.querySelector('.list-group');
-const emptyCart = document.querySelector('.empty');
 const total = document.querySelector('.total');
+let deleteBtn = document.querySelector('.deleteItems');
 
 const sumall = shoppingCart
   .map((item) => parseFloat(item.price))
   .reduce((prev, curr) => prev + curr, 0);
 
 total.innerHTML = `Total price: <b>$${sumall}</b>`;
-
-if (localStorage.getItem('savedProducts') === null) {
-  emptyCart.innerHTML = '<b>Your cart is empty</b>';
-}
 
 function displayProductsInShoppingCart() {
   shoppingCart.forEach((product) => {
@@ -38,3 +34,20 @@ function displayProductsInShoppingCart() {
   });
 }
 displayProductsInShoppingCart();
+
+if (listOfProducts.innerHTML === '') {
+  listOfProducts.innerHTML = '<b>Your cart is empty.</b>';
+  deleteBtn.innerHTML = '';
+  total.innerHTML = '';
+}
+
+function deleteItemsFromCart() {
+  deleteBtn.onclick = function () {
+    localStorage.removeItem('savedProducts');
+    listOfProducts.innerHTML = '<b>Your cart is empty.</b>';
+    shoppingCart = [];
+    deleteBtn.innerHTML = '';
+    total.innerHTML = '';
+  };
+}
+deleteItemsFromCart();

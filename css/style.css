@@ -641,11 +641,21 @@ a {
   margin-top: 2rem;
 }
 
+.list-group {
+  margin-bottom: 1rem;
+}
+
 .list-group-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
+}
+
+.deleteItems {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
