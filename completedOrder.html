@@ -18,82 +18,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Shoue | Cart</title>
+    <title>Shoue | Order Success</title>
   </head>
   <body>
     <header>
       <div class="navigation"></div>
     </header>
     <main>
-      <section class="cart">
+      <section class="order">
         <div class="container">
-          <h1>Your Cart</h1>
-          <div class="cart__flex d-flex">
-            <form class="form row g-3">
-              <div class="col-md-8">
-                <label for="name" class="form-label">First Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="firstName"
-                  placeholder="John"
-                />
-              </div>
-              <div class="col-md-8">
-                <label for="Subtext" class="form-label">Last Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lastName"
-                  placeholder="Doe"
-                />
-              </div>
-              <div class="col-md-8">
-                <label for="About" class="form-label">Email</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  placeholder="John.doe@gmail.com"
-                />
-              </div>
-              <div class="col-md-8">
-                <label for="description" class="form-label">Address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="address"
-                  placeholder="Adress 1, 0101 Nowhere Street"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="url" class="form-label">Card Number</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="cardNumber"
-                  placeholder="1234 5678 9123 4567"
-                />
-              </div>
-              <div class="col-md-2">
-                <label for="url" class="form-label">CVC</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="CVC"
-                  placeholder="000"
-                />
-              </div>
-              <div class="col-12 cart__button">
-                <a href="/completedOrder.html" class="hero__button">Checkout</a>
-              </div>
-            </form>
-            <div class="products__items">
-              <div class="list-group"></div>
-              <a class="deleteItems">Remove Products</a>
-              <p class="total"></p>
-            </div>
-          </div>
+          <h1 class="order__title">Thank you for your purchase.</h1>
+          <p class="order__text">An email has been sent with comfirmation.</p>
         </div>
       </section>
     </main>
@@ -156,7 +91,7 @@
 
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script type="module" src="/js/components/navMenu.js"></script>
-    <script type="module" src="/js/cart.js"></script>
   </body>
 </html>

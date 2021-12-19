@@ -681,4 +681,26 @@ a {
     margin-top: 1rem;
   }
 }
+
+.order {
+  min-height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f4f8ff;
+}
+
+.order__title {
+  text-align: center;
+}
+
+.order__text {
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
