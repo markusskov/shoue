@@ -2,8 +2,8 @@
 
 ```bash
 Super Admin Credentials:
-Username: admin@admin.com
-Password: admin123
+Username: markusskov@hotmail.com
+Password: test1234
 ```
 
 Production website:
